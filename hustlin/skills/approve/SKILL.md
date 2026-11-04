@@ -10,12 +10,13 @@ Needs the `hustlin` MCP server. Approving runs the action through the accounts c
 ## Steps
 
 1. `actions` with `status: queued` (and `productId` from `HUSTLIN.md` when present). If empty, say so and suggest `/launch` or `/grow`.
-2. For each action, in order: show channel, scheduled date, the full draft `content`, and the `automationLevel` (manual: guidance for the founder; ai_assisted: Hustlin drafts, founder posts on copy-and-post platforms; automated: Hustlin publishes). Ask one question: approve, skip, edit, or stop.
-3. On **approve**: `approve` with `decision: approve`. Report the `delivery` the server returns (guidance, draft or run) in one line.
+2. **Stale rows first, as a batch.** Rows with `stale: true` were scheduled more than two weeks ago; the moment passed. List them in one table (channel, date, first line of the draft) and ask once: skip them all, keep some, or look at each. Skip with `approve` `decision: skip` per row only after that yes. Never approve a stale row without rescheduling it (`edit` cannot reschedule; say so and leave it).
+3. For each live action, in order: show channel, scheduled date, the full `draft`, what it is `waitingFor`, and the `automationLevel` (manual: guidance for the founder; ai_assisted: Hustlin drafts, the founder posts on platforms that forbid automated posting; one_tap and auto: Hustlin publishes). The `brief` is the planning instruction, not the post; show it only when asked. If `waitingFor` says autopilot runs it at its scheduled time, say so and move on unless the user wants it out now. Ask one question: approve, skip, edit, or stop.
+4. On **approve**: `approve` with `decision: approve`. Report the `delivery` the server returns (guidance, draft or run) in one line.
    On **skip**: `approve` with `decision: skip`.
    On **edit**: take the user's changes (or draft a revision if they describe it), show the new text, and on their OK call `approve` with `decision: edit` and `content`; then ask again whether to approve it.
    On **stop**: end and summarize.
-4. After the last one: one table of what was approved, skipped, edited and left, and a reminder that run results show up in `actions` and in `/report`.
+5. After the last one: one table of what was approved, skipped, edited and left, and a reminder that run results show up in `actions` and in `/report`.
 
 ## Rules
 
