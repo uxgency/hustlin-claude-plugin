@@ -1,0 +1,16 @@
+{
+  "name": "uxgency",
+  "owner": { "name": "Uxgency", "email": "support@hustlin.ai" },
+  "metadata": { "description": "Uxgency plugins for Claude Code", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "hustlin",
+      "source": "./hustlin",
+      "description": "Hustlin, the growth team for new products, in your terminal: launch, plan, approve and measure growth for what you just built.",
+      "version": "1.0.0",
+      "author": { "name": "Uxgency" },
+      "homepage": "https://hustlin.ai/mcp",
+      "keywords": ["growth", "marketing", "launch", "mcp"]
+    }
+  ]
+}
