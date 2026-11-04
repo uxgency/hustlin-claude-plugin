@@ -1,0 +1,8 @@
+{
+  "name": "hustlin",
+  "version": "1.0.0",
+  "description": "Hustlin, the growth team for new products, in your terminal: launch, plan, approve and measure growth for what you just built.",
+  "author": { "name": "Uxgency", "email": "support@hustlin.ai", "url": "https://hustlin.ai" },
+  "homepage": "https://hustlin.ai/mcp",
+  "keywords": ["growth", "marketing", "launch", "commercialization", "mcp"]
+}
