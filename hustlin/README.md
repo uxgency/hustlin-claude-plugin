@@ -18,10 +18,10 @@ claude mcp add --transport http hustlin https://hustlin.ai/api/mcp --header "Aut
 
 | Skill | Needs a key | Does |
 |---|---|---|
-| `/launch` | yes | Repo → HUSTLIN.md → product → plan → first actions to approve |
+| `/launch` | yes | Repo → HUSTLIN.md → product → plan → first actions to approve, plus the conversion snippet for the signup handler |
 | `/grow <goal>` | yes | Set a goal, refresh the plan, propose the actions that serve it |
 | `/approve` | yes | Walk through queued actions one by one; approve, skip or edit |
-| `/report` | yes | What worked last week and over four weeks, per channel |
+| `/report` | yes | The weekly what-worked report as markdown, per channel, ready to save in the repo |
 | `/launch-checklist` | no | The launch-week playbook Hustlin runs, as a checklist |
 | `/directories` | no | Where to list a new product, and what each one rewards |
 

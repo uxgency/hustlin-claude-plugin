@@ -26,3 +26,4 @@ Product context for Hustlin (https://hustlin.ai/mcp). Keep it in the repo root; 
 
 ## Hustlin
 - **product_id:** <!-- filled by /launch -->
+- **conversion_key_prefix:** <!-- filled by /launch when the signup handler reports conversions; the key itself lives in the deployment's HUSTLIN_VENTURE_KEY, never here -->

@@ -22,3 +22,4 @@ Needs the `hustlin` MCP server. Approving runs the action through the accounts c
 - Never batch-approve. Never approve on "looks good" said before the draft was shown.
 - Keep the user's voice: edits follow the Voice section of `HUSTLIN.md`.
 - Manual actions are tasks for the founder; approving one does not run anything.
+- An action that is already `approved` (autopilot or a teammate approved it; it is waiting for its calendar slot) is not re-approved here. If the user wants it out now, call `run` with its id; `run` refuses drafts, so it never approves on its own.
