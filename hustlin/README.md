@@ -24,7 +24,7 @@ No browser (CI, a server)? Create a key under Settings → Advanced and pass it 
 | Skill | Needs an account | Does |
 |---|---|---|
 | `/launch` | yes | Repo → HUSTLIN.md → product → plan → first actions to approve, plus the conversion snippet for the signup handler |
-| `/grow <goal>` | yes | Set a goal, refresh the plan, propose the actions that serve it |
+| `/grow <goal>` | yes | Set a goal, rebuild the plan against it (deadline, pace, channel mix), show how each queued action serves it |
 | `/approve` | yes | Walk through queued actions one by one; approve, skip or edit |
 | `/report` | yes | The weekly what-worked report as markdown, per channel, ready to save in the repo |
 | `/launch-checklist` | no | The launch-week playbook Hustlin runs, as a checklist |
