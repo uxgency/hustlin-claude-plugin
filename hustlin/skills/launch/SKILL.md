@@ -5,7 +5,7 @@ description: Commercialize what was just built. Reads the repo, writes HUSTLIN.m
 
 # /launch
 
-Hustlin is the growth team for new products. This skill takes a repo from "it works" to "the first week of growth is drafted and waiting for approval". Needs the `hustlin` MCP server (key from https://hustlin.ai → Settings → Advanced).
+Hustlin is the growth team for new products. This skill takes a repo from "it works" to "the first week of growth is drafted and waiting for approval". Needs the `hustlin` MCP server; the first call opens the browser to sign in to Hustlin.
 
 ## Steps
 
