@@ -5,11 +5,9 @@ Hustlin is the growth team for new products. This plugin puts it in your termina
 ## Install
 
 ```
-claude plugin marketplace add /path/to/studio/plugins
+claude plugin marketplace add uxgency/hustlin-claude-plugin
 claude plugin install hustlin@uxgency
 ```
-
-(A public marketplace listing is coming; until then the marketplace is the `plugins/` folder of this repo.)
 
 The first tool call opens your browser to sign in to Hustlin and allow Claude Code (OAuth 2.1 with PKCE). Revoke it any time at https://hustlin.ai → a product → Settings → Advanced.
 
