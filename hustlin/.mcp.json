@@ -2,8 +2,7 @@
   "mcpServers": {
     "hustlin": {
       "type": "http",
-      "url": "https://hustlin.ai/api/mcp",
-      "headers": { "Authorization": "Bearer ${HUSTLIN_API_KEY}" }
+      "url": "https://hustlin.ai/api/mcp"
     }
   }
 }

@@ -4,19 +4,26 @@ Hustlin is the growth team for new products. This plugin puts it in your termina
 
 ## Install
 
-1. Get a key at https://hustlin.ai → a product → Settings → Advanced → Hustlin in Claude Code.
-2. Put it in your environment: `export HUSTLIN_API_KEY=hmk_…`
-3. Install the plugin (from this folder): `claude plugin install ./plugins/hustlin`
+```
+claude plugin marketplace add /path/to/studio/plugins
+claude plugin install hustlin@uxgency
+```
 
-Without the plugin, the MCP server alone works in any client:
+(A public marketplace listing is coming; until then the marketplace is the `plugins/` folder of this repo.)
+
+The first tool call opens your browser to sign in to Hustlin and allow Claude Code (OAuth 2.1 with PKCE). Revoke it any time at https://hustlin.ai → a product → Settings → Advanced.
+
+Without the plugin, the MCP server alone works in any client that supports OAuth:
 
 ```
-claude mcp add --transport http hustlin https://hustlin.ai/api/mcp --header "Authorization: Bearer hmk_…"
+claude mcp add --transport http hustlin https://hustlin.ai/api/mcp
 ```
+
+No browser (CI, a server)? Create a key under Settings → Advanced and pass it as a header: `--header "Authorization: Bearer hmk_…"`.
 
 ## Skills
 
-| Skill | Needs a key | Does |
+| Skill | Needs an account | Does |
 |---|---|---|
 | `/launch` | yes | Repo → HUSTLIN.md → product → plan → first actions to approve, plus the conversion snippet for the signup handler |
 | `/grow <goal>` | yes | Set a goal, refresh the plan, propose the actions that serve it |
